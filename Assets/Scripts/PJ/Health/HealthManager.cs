@@ -47,6 +47,7 @@ public class HealthManager : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+        audioSource.PlayOneShot(damageSound);
 
         for (int i = m_intancedCorazones.Count - 1; i >= 0; i--)
         {
@@ -96,6 +97,7 @@ public class HealthManager : MonoBehaviour
 
     private void Die()
     {
+        audioSource.PlayOneShot(deadSound);
         if (anim.GetInteger("State") == 2)
         {
             GameManager.Instance.PlayerDied();
