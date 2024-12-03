@@ -1,10 +1,22 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PauseMenuController : MonoBehaviour
 {
     [SerializeField] private GameObject pauseMenuUI;
+    [SerializeField] private GameObject optionsMenuUI;
+    [SerializeField] private Slider volumeSlider;
+
     private bool isPaused = false;
+
+    void Start()
+    {
+        pauseMenuUI.SetActive(false);
+        optionsMenuUI.SetActive(false);
+
+        volumeSlider.onValueChanged.AddListener(SetVolume);
+    }
 
     void Update()
     {
@@ -20,6 +32,7 @@ public class PauseMenuController : MonoBehaviour
     public void PauseGame()
     {
         pauseMenuUI.SetActive(true);
+        optionsMenuUI.SetActive(false);
         Time.timeScale = 0f;
         isPaused = true;
     }
@@ -27,6 +40,7 @@ public class PauseMenuController : MonoBehaviour
     public void ResumeGame()
     {
         pauseMenuUI.SetActive(false);
+        optionsMenuUI.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
     }
@@ -41,6 +55,23 @@ public class PauseMenuController : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("Inicio");
+    }
+
+    public void OpenOptionsMenu()
+    {
+        pauseMenuUI.SetActive(false);
+        optionsMenuUI.SetActive(true);
+    }
+
+    public void BackToPauseMenu()
+    {
+        optionsMenuUI.SetActive(false);
+        pauseMenuUI.SetActive(true);
+    }
+
+    private void SetVolume(float volume)
+    {
+        AudioListener.volume = volume;
     }
 
     public void QuitGame()

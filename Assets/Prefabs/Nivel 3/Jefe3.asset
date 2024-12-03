@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff0d61a16d621af4480f247701103602, type: 3}
   m_Name: Jefe3
   m_EditorClassIdentifier: 
-  maxHealth: 30
+  maxHealth: 45
   speed: 0
