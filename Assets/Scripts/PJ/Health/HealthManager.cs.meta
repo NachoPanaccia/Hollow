@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 23d4a56f6c4f79945bc1e7be71aa478d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - damageSound: {fileID: 8300000, guid: 32a4c863f8d23524d8290de68960ff5a, type: 3}
+  - audioSource: {instanceID: 0}
+  - deadSound: {instanceID: 0}
+  - m_corazonPrefab: {instanceID: 0}
+  - m_corazonContainer: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

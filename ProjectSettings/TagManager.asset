@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Gun Bullet
+  - Caja
+  - Enemy
+  - Enemy Gun Bullet
+  - Enemies Spawner
+  - Pared
+  - Jefe 2
+  - Hacha Jefe 2
+  - CorazonVida
+  - Minion
+  - Hacha Minion
+  - Jefe 3
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Player
+  - Water
+  - UI
+  - Gun Bullet
+  - Caja
+  - Pared
+  - Enemigo
+  - Enemy Gun Bullet
+  - Enemies Spawner
+  - PlacaSpawner
+  - Jefe 2
+  - HachaJefe 2
+  - Minion 2
+  - Jefe 3
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
