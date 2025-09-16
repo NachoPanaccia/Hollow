@@ -10,9 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7546382474794253448}
   - component: {fileID: 7356395933574516717}
-  - component: {fileID: 8739965899394732863}
   - component: {fileID: 6551640567576196556}
-  - component: {fileID: 3690269336097123367}
+  - component: {fileID: 4064855648119796997}
   m_Layer: 6
   m_Name: Bala
   m_TagString: Gun Bullet
@@ -87,27 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &8739965899394732863
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2518392879933528303}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 0.09
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!61 &6551640567576196556
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -134,7 +112,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.74894, y: 3.2232203}
   m_EdgeRadius: 0
---- !u!114 &3690269336097123367
+--- !u!114 &4064855648119796997
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,7 +121,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2518392879933528303}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90bc86b3db8bbd94a96a4c32bd4c4fb2, type: 3}
+  m_Script: {fileID: 11500000, guid: b79fa45ba70885e45a3c6a353286ae7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
