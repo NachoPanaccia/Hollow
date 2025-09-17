@@ -7,7 +7,7 @@ public class ScriptableEnemies : ScriptableObject
     public int maxHealth = 5;
     public float speed = 3f;
 
-    [Header("Ataque (si aplica)")]
+    [Header("Ataque)")]
     public int damage = 1;
     public float fireRate = 0.5f;       // tiros/seg
     public float bulletSpeed = 20f;

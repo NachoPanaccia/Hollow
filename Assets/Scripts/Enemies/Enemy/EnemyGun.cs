@@ -6,7 +6,7 @@ public class EnemyGun : MonoBehaviour
     [SerializeField] private Transform firePoint;
     [SerializeField] private AudioSource audioSource;
 
-    private Transform target;                 // [Materia: Caching] cache de referencia. 
+    private Transform target;             
     private float nextShootTime;
 
     private void Awake()
@@ -16,10 +16,10 @@ public class EnemyGun : MonoBehaviour
 
     private void Start()
     {
-        var player = GameObject.FindGameObjectWithTag("Player"); // se resuelve una vez
+        var player = GameObject.FindGameObjectWithTag("Player"); 
         if (player != null) target = player.transform;
 
-        nextShootTime = Time.time + 0.25f; // arranque suave
+        nextShootTime = Time.time + 0.25f; 
     }
 
     private void Update()
@@ -28,12 +28,12 @@ public class EnemyGun : MonoBehaviour
 
         if (Time.time >= nextShootTime)
         {
-            // Rotar firePoint hacia el objetivo
+            
             Vector2 dir = (target.position - firePoint.position);
             float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
             firePoint.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
-            // Disparo usando la MISMA dirección que la rotación
+           
             var prefab = data.bulletPrefab;
             if (prefab == null) return;
 
@@ -41,7 +41,7 @@ public class EnemyGun : MonoBehaviour
             var rb = go.GetComponent<Rigidbody2D>();
             if (rb != null)
             {
-                rb.velocity = (Vector2)firePoint.right * data.bulletSpeed; // right = eje local X del firePoint
+                rb.velocity = (Vector2)firePoint.right * data.bulletSpeed; 
             }
 
             if (data.shootSfx != null && audioSource != null)
@@ -49,7 +49,7 @@ public class EnemyGun : MonoBehaviour
 
             nextShootTime = Time.time + (1f / Mathf.Max(0.01f, data.fireRate));
 
-            // [Materia: Expected Path] evitar Find cada tiro y alinear rotación/dirección. 
+            
         }
     }
 }

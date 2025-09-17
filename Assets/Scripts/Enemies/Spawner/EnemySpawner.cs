@@ -7,7 +7,7 @@ public class EnemySpawner : MonoBehaviour
     public GameObject enemyPrefab;
     public float spawnInterval = 10f;
     public int prewarm = 4;
-    public int maxAlive = 12;                 // [Materia: Frame Budget] limitar carga. 
+    public int maxAlive = 12;                
     public float minPlayerDistance = 6f;
 
     [Header("Spawn Offset")]
@@ -37,8 +37,7 @@ public class EnemySpawner : MonoBehaviour
     {
         if (enemyPrefab == null) return;
 
-        // cap suave por intervalo (no buscamos contar en cada frame)
-        // Si tenés LevelManager1 con contador, lo ideal es consultarlo. Aquí uso tag para no depender.
+       
         var current = GameObject.FindGameObjectsWithTag("Enemy").Length;
         if (current >= maxAlive) return;
 

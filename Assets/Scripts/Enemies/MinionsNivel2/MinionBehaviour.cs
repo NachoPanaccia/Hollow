@@ -5,42 +5,33 @@ using UnityEngine;
 public class MinionBehaviour : MonoBehaviour, IDamageable
 {
     [SerializeField] private ScriptableEnemies enemyData;
-    //private int minionLifes = 4;
+    [SerializeField] private GameObject CorazonVida;
     public int currentHealth;
 
-    public GameObject CorazonVida;
+    private PooledObject pooled;
 
     public void Start()
     {
-        currentHealth = enemyData.maxHealth;
-
+        currentHealth = (enemyData != null) ? enemyData.maxHealth : 4;
+        pooled = GetComponent<PooledObject>();
         LevelManager2.Instance.RegisterMinion();
     }
 
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        Debug.Log($"Enemigo recibió {damage} de daño. Vida actual: {currentHealth}");
-
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
-    }
-
-    public void OnDestroy()
-    {
-        float dropChance = Random.value;
-
-        if (dropChance <= 0.25f)
-        {
-            Instantiate(CorazonVida, transform.position, Quaternion.identity);
-        }
+        if (currentHealth <= 0) Die();
     }
 
     void Die()
     {
+        
+        if (CorazonVida && Random.value <= 0.25f)
+            Instantiate(CorazonVida, transform.position, Quaternion.identity);
+
         LevelManager2.Instance.UnregisterMinion();
-        Destroy(gameObject);
+
+        if (pooled != null) pooled.Release(); // [Materia: Pooling/GC] 
+        else Destroy(gameObject);
     }
 }

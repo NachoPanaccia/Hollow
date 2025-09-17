@@ -13,11 +13,11 @@ public class Jefe2Movement : MonoBehaviour
     private Transform playerTransform;
     private bool playerDetected;
     private float nextDetectTime;
-    private readonly Collider2D[] buffer = new Collider2D[4]; // [Materia: Non-Alloc] 
+    private readonly Collider2D[] buffer = new Collider2D[4]; 
 
     void Start()
     {
-        movementSpeed = (enemyData != null) ? enemyData.speed : 5f; // FIX: antes usaba maxHealth como speed. 
+        movementSpeed = (enemyData != null) ? enemyData.speed : 5f;  
         var player = GameObject.FindGameObjectWithTag("Player");
         if (player) playerTransform = player.transform;
     }

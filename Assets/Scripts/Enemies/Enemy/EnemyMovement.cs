@@ -3,14 +3,13 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] private ScriptableEnemies data;
-    [SerializeField] private LayerMask obstacleMask; // setear paredes/cajas/spawners en capas
-    [SerializeField] private float avoidanceTick = 0.15f; // [Materia: Expected Path] bajar frecuencia. 
+    [SerializeField] private LayerMask obstacleMask; 
+    [SerializeField] private float avoidanceTick = 0.15f; 
 
     private float speed;
     private Transform target;
     private float nextAvoidTime;
-    private readonly Collider2D[] overlapBuffer = new Collider2D[8]; // [Materia: Non-Alloc API]. 
-
+    private readonly Collider2D[] overlapBuffer = new Collider2D[8];
     private Vector2 lastAvoidDir;
 
     private void Start()
@@ -29,10 +28,10 @@ public class EnemyMovement : MonoBehaviour
 
         if (Time.time >= nextAvoidTime)
         {
-            // Sólo cada tick hacemos la evasión (no cada frame)
+          
             int hits = Physics2D.OverlapCircleNonAlloc(transform.position,
                 (data != null ? data.avoidanceRadius : 3f),
-                overlapBuffer, obstacleMask); // [Materia: Non-Alloc + LayerMask]. 
+                overlapBuffer, obstacleMask); 
 
             Vector2 avoid = Vector2.zero;
             for (int i = 0; i < hits; i++)
