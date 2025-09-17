@@ -203,7 +203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d74a29284c10b9a4cad49e9999d11b70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyData: {fileID: 11400000, guid: 6c3671e7787fcdc4fbc2cb38aeb5eedd, type: 2}
+  enemyData: {fileID: 11400000, guid: c753d0fb6dc08a542bee680414aaec7f, type: 2}
   currentHealth: 0
   CorazonVida: {fileID: 7611388657939031685, guid: 911f583026e92b24b9fe5daa99635997, type: 3}
 --- !u!114 &5996392948325794710
@@ -218,10 +218,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a670396b30ae06f4398181c986ffbb32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyData: {fileID: 11400000, guid: 6c3671e7787fcdc4fbc2cb38aeb5eedd, type: 2}
+  enemyData: {fileID: 11400000, guid: c753d0fb6dc08a542bee680414aaec7f, type: 2}
   playerLayer:
     serializedVersion: 2
     m_Bits: 8
+  detectTick: 0.15
 --- !u!1 &6180849274475947495
 GameObject:
   m_ObjectHideFlags: 0

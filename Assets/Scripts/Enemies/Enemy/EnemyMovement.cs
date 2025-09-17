@@ -1,60 +1,68 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    [SerializeField] private ScriptableEnemies enemyData;
-    private float speed; 
-    private float avoidanceRadius = 3f; 
+    [SerializeField] private ScriptableEnemies data;
+    [SerializeField] private LayerMask obstacleMask; // setear paredes/cajas/spawners en capas
+    [SerializeField] private float avoidanceTick = 0.15f; // [Materia: Expected Path] bajar frecuencia. 
 
+    private float speed;
     private Transform target;
+    private float nextAvoidTime;
+    private readonly Collider2D[] overlapBuffer = new Collider2D[8]; // [Materia: Non-Alloc API]. 
+
+    private Vector2 lastAvoidDir;
 
     private void Start()
     {
-        speed = enemyData.speed;
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        if (player != null)
-        {
-            target = player.transform;
-        }
+        speed = (data != null) ? data.speed : 3f;
+
+        var player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null) target = player.transform;
     }
 
     private void Update()
     {
-        RotacionYEvasion();
-    }
+        if (target == null) return;
 
-    private void RotacionYEvasion()
-    {
-        if (target != null)
+        Vector2 dir = (target.position - transform.position).normalized;
+
+        if (Time.time >= nextAvoidTime)
         {
-            Vector3 direction = target.position - transform.position; 
-            direction.Normalize(); 
+            // Sólo cada tick hacemos la evasión (no cada frame)
+            int hits = Physics2D.OverlapCircleNonAlloc(transform.position,
+                (data != null ? data.avoidanceRadius : 3f),
+                overlapBuffer, obstacleMask); // [Materia: Non-Alloc + LayerMask]. 
 
-            Collider2D[] obstacles = Physics2D.OverlapCircleAll(transform.position, avoidanceRadius);
-
-            foreach (Collider2D obstacle in obstacles)
+            Vector2 avoid = Vector2.zero;
+            for (int i = 0; i < hits; i++)
             {
-                if (obstacle.CompareTag("Caja") | obstacle.CompareTag("Enemies Spawner"))
-                {
-                    Vector3 avoidDirection = transform.position - obstacle.transform.position;
-                    direction += avoidDirection.normalized;
-                }
+                var c = overlapBuffer[i];
+                if (c == null) continue;
+                Vector2 away = (Vector2)(transform.position - c.bounds.ClosestPoint(transform.position));
+                avoid += away.normalized;
             }
-
-            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f; 
-            Quaternion targetRotation = Quaternion.Euler(0f, 0f, angle); 
-
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, 360f * Time.deltaTime); 
-
-            transform.Translate(Vector3.up * speed * Time.deltaTime); 
+            lastAvoidDir = avoid;
+            nextAvoidTime = Time.time + avoidanceTick;
         }
+
+        if (lastAvoidDir != Vector2.zero)
+        {
+            float weight = (data != null ? data.avoidanceWeight : 1f);
+            dir = (dir + lastAvoidDir.normalized * weight).normalized;
+        }
+
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90f;
+        var targetRot = Quaternion.Euler(0, 0, angle);
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, 360f * Time.deltaTime);
+
+        transform.Translate(Vector3.up * speed * Time.deltaTime);
     }
 
     private void OnDrawGizmosSelected()
     {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, avoidanceRadius);
+        float r = data != null ? data.avoidanceRadius : 3f;
+        Gizmos.color = new Color(1, 0.2f, 0.2f, 0.35f);
+        Gizmos.DrawWireSphere(transform.position, r);
     }
 }

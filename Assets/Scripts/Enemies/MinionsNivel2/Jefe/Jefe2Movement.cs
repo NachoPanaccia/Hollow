@@ -1,30 +1,32 @@
 
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Jefe2Movement : MonoBehaviour
 {
     [SerializeField] private ScriptableEnemies enemyData;
-    //public float movementSpeed = 5f;
+    [SerializeField] private LayerMask playerLayer;
+    [SerializeField] private float detectTick = 0.15f;
+
     private float movementSpeed;
     public float detectionRadius = 10f;
-    public LayerMask playerLayer;
 
     private Transform playerTransform;
-    private bool playerDetected = false;
+    private bool playerDetected;
+    private float nextDetectTime;
+    private readonly Collider2D[] buffer = new Collider2D[4]; // [Materia: Non-Alloc] 
 
     void Start()
     {
-        movementSpeed = enemyData.maxHealth;
-        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+        movementSpeed = (enemyData != null) ? enemyData.speed : 5f; // FIX: antes usaba maxHealth como speed. 
+        var player = GameObject.FindGameObjectWithTag("Player");
+        if (player) playerTransform = player.transform;
     }
 
     void Update()
     {
         if (!playerDetected)
         {
-            CheckPlayerDetection();
+            if (Time.time >= nextDetectTime) CheckPlayerDetection();
         }
         else
         {
@@ -34,19 +36,18 @@ public class Jefe2Movement : MonoBehaviour
 
     void CheckPlayerDetection()
     {
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, detectionRadius, playerLayer);
-
-        foreach (Collider2D collider in colliders)
+        int hits = Physics2D.OverlapCircleNonAlloc(transform.position, detectionRadius, buffer, playerLayer);
+        for (int i = 0; i < hits; i++)
         {
-            if (collider.CompareTag("Player"))
-            {
-                playerDetected = true;
-            }
+            var c = buffer[i];
+            if (c != null && c.CompareTag("Player")) { playerDetected = true; break; }
         }
+        nextDetectTime = Time.time + detectTick;
     }
 
     void MoveTowardsPlayer()
     {
+        if (!playerTransform) return;
         transform.position = Vector3.MoveTowards(transform.position, playerTransform.position, movementSpeed * Time.deltaTime);
     }
 }
