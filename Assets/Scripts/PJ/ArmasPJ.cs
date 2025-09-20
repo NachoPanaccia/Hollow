@@ -12,7 +12,7 @@ public class ArmasPJ : MonoBehaviour
 
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null) audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -22,19 +22,34 @@ public class ArmasPJ : MonoBehaviour
 
     private void Shoot()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+       
+        if (Input.GetMouseButtonDown(0))
         {
-            Vector3 bulletPosition = cannonPosition.position;
-            GameObject gunBullets = bulletPool.GetObject();
-            gunBullets.transform.SetPositionAndRotation(bulletPosition, transform.rotation);
-            gunBullet gunBulletsComponent = gunBullets.GetComponent<gunBullet>();
-            gunBulletsComponent.SetDirection(transform.up);
-            gunBulletsComponent.bulletPool = this.bulletPool;
+            if (bulletPool == null || cannonPosition == null) return;
 
-            if (disparoSound != null && audioSource != null)
+           
+            Vector3 bulletPos = cannonPosition.position;
+
+           
+            Vector3 mouseWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            mouseWorld.z = bulletPos.z;
+            Vector3 dir = (mouseWorld - bulletPos).normalized;
+
+            
+            GameObject bulletGO = bulletPool.GetObject();
+            bulletGO.transform.SetPositionAndRotation(bulletPos, Quaternion.identity);
+
+           
+            gunBullet bullet = bulletGO.GetComponent<gunBullet>();
+            if (bullet != null)
             {
-                audioSource.PlayOneShot(disparoSound);
+                bullet.bulletPool = this.bulletPool; 
+                bullet.SetDirection(dir);
             }
+
+           
+            if (disparoSound != null && audioSource != null)
+                audioSource.PlayOneShot(disparoSound);
         }
     }
 }

@@ -4,35 +4,50 @@ using UnityEngine;
 
 public class gunBullet : MonoBehaviour
 {
-    private float bulletSpeed = 30f;
+    [SerializeField] private float bulletSpeed = 30f;
+    [SerializeField] private float lifeTime = 3f;
+
+    private float lifeTimer;
     private Vector3 m_direction;
+
     public int damage = 5;
     public Pool bulletPool;
 
-    void Start()
+    void OnEnable()
     {
-        Destroy(gameObject, 3f);
+        lifeTimer = lifeTime;
     }
 
     public void SetDirection(Vector3 p_direction)
     {
-        m_direction = p_direction;
+        m_direction = p_direction.normalized;
+
+        
+        float angle = Mathf.Atan2(m_direction.y, m_direction.x) * Mathf.Rad2Deg - 90f;
+        transform.rotation = Quaternion.Euler(0, 0, angle);
     }
 
     void Update()
     {
         transform.position += bulletSpeed * Time.deltaTime * m_direction;
+
+        lifeTimer -= Time.deltaTime;
+        if (lifeTimer <= 0f)
+        {
+            if (bulletPool != null) bulletPool.ReturnToPool(gameObject);
+            else Destroy(gameObject);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        IDamageable target = collision.gameObject.GetComponent<IDamageable>();
-        if (target != null)
+        if (collision.gameObject.TryGetComponent<IDamageable>(out var target))
         {
             ICommand damageCommand = new DamageCommand(target, damage);
             damageCommand.Execute();
         }
-        
-        bulletPool.ReturnToPool(this.gameObject);
+
+        if (bulletPool != null) bulletPool.ReturnToPool(gameObject);
+        else Destroy(gameObject);
     }
 }

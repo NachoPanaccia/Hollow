@@ -6,7 +6,7 @@ public class Pool : MonoBehaviour
 {
     Queue<GameObject> objectPool;
     public GameObject ObjectPrefab;
-    public int InitialObjects;
+    public int InitialObjects = 10;
 
     void Awake()
     {
@@ -14,31 +14,31 @@ public class Pool : MonoBehaviour
 
         for (int i = 0; i < InitialObjects; i++)
         {
-            GameObject Object = Instantiate(ObjectPrefab);
-            Object.SetActive(false);
-            objectPool.Enqueue(Object);
+            GameObject obj = Instantiate(ObjectPrefab);
+            obj.SetActive(false);
+            objectPool.Enqueue(obj);
         }
     }
-    
+
     public GameObject GetObject()
     {
-        GameObject Object;
+        GameObject obj;
         if (objectPool.Count > 0)
         {
-            Object = objectPool.Dequeue();
-            Object.SetActive(true);
+            obj = objectPool.Dequeue();
+            obj.SetActive(true);
         }
         else
         {
-            Object = Instantiate(ObjectPrefab);
-            objectPool.Enqueue(Object);
+            obj = Instantiate(ObjectPrefab);
+            obj.SetActive(true);
         }
-        return Object;
+        return obj;
     }
 
-    public void ReturnToPool(GameObject Object)
+    public void ReturnToPool(GameObject obj)
     {
-        Object.SetActive(false);
-        objectPool.Enqueue(Object);
+        obj.SetActive(false);
+        objectPool.Enqueue(obj);
     }
 }

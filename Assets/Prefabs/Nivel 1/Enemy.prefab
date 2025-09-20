@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7849160b1206ce4b92398a76884e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 0}
+  data: {fileID: 11400000, guid: c58fc74067c96744580bca1196adb3da, type: 2}
   currentHealth: 0
 --- !u!114 &5798777389218059812
 MonoBehaviour:
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 057678ec78efe3c42b0ab9764ba2feee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: da99ae69182aabc48ad3031dd419f278, type: 2}
+  data: {fileID: 11400000, guid: c58fc74067c96744580bca1196adb3da, type: 2}
   firePoint: {fileID: 638895803383770768}
   audioSource: {fileID: -4406338918767874304}
 --- !u!114 &7675647917578893784
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b4419b261e019b4781029b6d2ce545f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 0}
+  data: {fileID: 11400000, guid: c58fc74067c96744580bca1196adb3da, type: 2}
   obstacleMask:
     serializedVersion: 2
     m_Bits: 0

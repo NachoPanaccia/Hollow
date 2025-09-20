@@ -123,123 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &22077017
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1516027029823869069, guid: 2f67bf455bb6b324e924d43dc68a4737, type: 3}
-      propertyPath: m_corazonContainer
-      value: 
-      objectReference: {fileID: 642646481}
-    - target: {fileID: 2408231818883092614, guid: 2f67bf455bb6b324e924d43dc68a4737, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4180947901421817984, guid: 2f67bf455bb6b324e924d43dc68a4737, type: 3}
-      propertyPath: deadSound
-      value: 
-      objectReference: {fileID: 8300000, guid: e125ace7a7fc37f4ea7c9393ccfd9deb, type: 3}
-    - target: {fileID: 4180947901421817984, guid: 2f67bf455bb6b324e924d43dc68a4737, type: 3}
-      propertyPath: "da\xF1oSound"
-      value: 
-      objectReference: {fileID: 1452188727}
-    - target: {fileID: 4180947901421817984, guid: 2f67bf455bb6b324e924d43dc68a4737, type: 3}
-      propertyPath: healthManager
-      value: 
-      objectReference: {fileID: 1452188725}
-    - target: {fileID: 4180947901421817984, guid: 2f67bf455bb6b324e924d43dc68a4737, type: 3}
-      propertyPath: m_corazonPrefab
-      value: 
-      objectReference: {fileID: 7578925892997549693, guid: 05c66b4633c8e84498ce20cb3b226384, type: 3}
-    - target: {fileID: 4180947901421817984, guid: 2f67bf455bb6b324e924d43dc68a4737, type: 3}
-      propertyPath: m_corazonContainer
-      value: 
-      objectReference: {fileID: 642646481}
-    - target: {fileID: 7250717740828455340, guid: 2f67bf455bb6b324e924d43dc68a4737, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 7680400720673671430, guid: 2f67bf455bb6b324e924d43dc68a4737, type: 3}
-      propertyPath: m_Name
-      value: Personaje_Principal3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7680400720673995376, guid: 2f67bf455bb6b324e924d43dc68a4737, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7680400720673995376, guid: 2f67bf455bb6b324e924d43dc68a4737, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 7.0586824
-      objectReference: {fileID: 0}
-    - target: {fileID: 7680400720673995376, guid: 2f67bf455bb6b324e924d43dc68a4737, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 7.730478
-      objectReference: {fileID: 0}
-    - target: {fileID: 7680400720673995376, guid: 2f67bf455bb6b324e924d43dc68a4737, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.35635
-      objectReference: {fileID: 0}
-    - target: {fileID: 7680400720673995376, guid: 2f67bf455bb6b324e924d43dc68a4737, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.4356403
-      objectReference: {fileID: 0}
-    - target: {fileID: 7680400720673995376, guid: 2f67bf455bb6b324e924d43dc68a4737, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -16.98
-      objectReference: {fileID: 0}
-    - target: {fileID: 7680400720673995376, guid: 2f67bf455bb6b324e924d43dc68a4737, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7680400720673995376, guid: 2f67bf455bb6b324e924d43dc68a4737, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7680400720673995376, guid: 2f67bf455bb6b324e924d43dc68a4737, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7680400720673995376, guid: 2f67bf455bb6b324e924d43dc68a4737, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7680400720673995376, guid: 2f67bf455bb6b324e924d43dc68a4737, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7680400720673995376, guid: 2f67bf455bb6b324e924d43dc68a4737, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7680400720673995376, guid: 2f67bf455bb6b324e924d43dc68a4737, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7680400720673995376, guid: 2f67bf455bb6b324e924d43dc68a4737, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7680400720683102076, guid: 2f67bf455bb6b324e924d43dc68a4737, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7680400720683102076, guid: 2f67bf455bb6b324e924d43dc68a4737, type: 3}
-      propertyPath: m_UpdateMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7680400720683102076, guid: 2f67bf455bb6b324e924d43dc68a4737, type: 3}
-      propertyPath: m_CullingMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7680400720683102076, guid: 2f67bf455bb6b324e924d43dc68a4737, type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2f67bf455bb6b324e924d43dc68a4737, type: 3}
 --- !u!1 &73169049
 GameObject:
   m_ObjectHideFlags: 0
@@ -250,12 +133,13 @@ GameObject:
   m_Component:
   - component: {fileID: 73169050}
   - component: {fileID: 73169051}
+  - component: {fileID: 73169052}
   m_Layer: 0
   m_Name: Light 2D (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &73169050
 Transform:
@@ -351,6 +235,92 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &73169052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73169049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
+--- !u!1001 &83677457
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2218845234186526446, guid: 899763ea7336fc54997e1a85b965a725, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218845234186526446, guid: 899763ea7336fc54997e1a85b965a725, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.3751721
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218845234186526446, guid: 899763ea7336fc54997e1a85b965a725, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -13.352862
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218845234186526446, guid: 899763ea7336fc54997e1a85b965a725, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218845234186526446, guid: 899763ea7336fc54997e1a85b965a725, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218845234186526446, guid: 899763ea7336fc54997e1a85b965a725, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218845234186526446, guid: 899763ea7336fc54997e1a85b965a725, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218845234186526446, guid: 899763ea7336fc54997e1a85b965a725, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218845234186526446, guid: 899763ea7336fc54997e1a85b965a725, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218845234186526446, guid: 899763ea7336fc54997e1a85b965a725, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218845234186526446, guid: 899763ea7336fc54997e1a85b965a725, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218845234186710424, guid: 899763ea7336fc54997e1a85b965a725, type: 3}
+      propertyPath: m_Name
+      value: Personaje_Principal
+      objectReference: {fileID: 0}
+    - target: {fileID: 7013981153265071123, guid: 899763ea7336fc54997e1a85b965a725, type: 3}
+      propertyPath: m_corazonContainer
+      value: 
+      objectReference: {fileID: 642646481}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 899763ea7336fc54997e1a85b965a725, type: 3}
+--- !u!4 &83677458 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2218845234186526446, guid: 899763ea7336fc54997e1a85b965a725, type: 3}
+  m_PrefabInstance: {fileID: 83677457}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &179204111
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,12 +331,13 @@ GameObject:
   m_Component:
   - component: {fileID: 179204112}
   - component: {fileID: 179204113}
+  - component: {fileID: 179204114}
   m_Layer: 0
   m_Name: Light 2D (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &179204112
 Transform:
@@ -462,6 +433,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &179204114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179204111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &222299789
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,12 +729,13 @@ GameObject:
   m_Component:
   - component: {fileID: 244398435}
   - component: {fileID: 244398436}
+  - component: {fileID: 244398437}
   m_Layer: 0
   m_Name: Light 2D (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &244398435
 Transform:
@@ -839,6 +831,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &244398437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244398434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &252030861
 GameObject:
   m_ObjectHideFlags: 0
@@ -875,7 +887,7 @@ RectTransform:
   - {fileID: 1134769808}
   - {fileID: 1906256451}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -968,12 +980,13 @@ GameObject:
   m_Component:
   - component: {fileID: 252788830}
   - component: {fileID: 252788831}
+  - component: {fileID: 252788832}
   m_Layer: 0
   m_Name: Light 2D (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &252788830
 Transform:
@@ -1069,6 +1082,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &252788832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252788829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &288390905
 GameObject:
   m_ObjectHideFlags: 0
@@ -1087,7 +1120,7 @@ GameObject:
   m_TagString: Pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &288390906
 Transform:
@@ -28046,12 +28079,13 @@ GameObject:
   m_Component:
   - component: {fileID: 295758090}
   - component: {fileID: 295758091}
+  - component: {fileID: 295758092}
   m_Layer: 0
   m_Name: Light 2D (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &295758090
 Transform:
@@ -28147,6 +28181,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &295758092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295758089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &300350391
 GameObject:
   m_ObjectHideFlags: 0
@@ -28157,12 +28211,13 @@ GameObject:
   m_Component:
   - component: {fileID: 300350392}
   - component: {fileID: 300350393}
+  - component: {fileID: 300350394}
   m_Layer: 0
   m_Name: Light 2D (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &300350392
 Transform:
@@ -28258,6 +28313,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &300350394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300350391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &346474392
 GameObject:
   m_ObjectHideFlags: 0
@@ -28351,12 +28426,13 @@ GameObject:
   m_Component:
   - component: {fileID: 463365769}
   - component: {fileID: 463365770}
+  - component: {fileID: 463365771}
   m_Layer: 0
   m_Name: Light 2D (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &463365769
 Transform:
@@ -28452,6 +28528,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &463365771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463365768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &535162335
 GameObject:
   m_ObjectHideFlags: 0
@@ -28462,12 +28558,13 @@ GameObject:
   m_Component:
   - component: {fileID: 535162336}
   - component: {fileID: 535162337}
+  - component: {fileID: 535162338}
   m_Layer: 0
   m_Name: Light 2D (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &535162336
 Transform:
@@ -28563,6 +28660,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &535162338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535162335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &571651384
 GameObject:
   m_ObjectHideFlags: 0
@@ -28573,12 +28690,13 @@ GameObject:
   m_Component:
   - component: {fileID: 571651385}
   - component: {fileID: 571651386}
+  - component: {fileID: 571651387}
   m_Layer: 0
   m_Name: Light 2D (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &571651385
 Transform:
@@ -28674,6 +28792,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &571651387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571651384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &642646480
 GameObject:
   m_ObjectHideFlags: 0
@@ -28875,12 +29013,13 @@ GameObject:
   m_Component:
   - component: {fileID: 799524960}
   - component: {fileID: 799524961}
+  - component: {fileID: 799524962}
   m_Layer: 0
   m_Name: Light 2D (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &799524960
 Transform:
@@ -28976,6 +29115,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &799524962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799524959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &875453012
 GameObject:
   m_ObjectHideFlags: 0
@@ -28986,12 +29145,13 @@ GameObject:
   m_Component:
   - component: {fileID: 875453013}
   - component: {fileID: 875453014}
+  - component: {fileID: 875453015}
   m_Layer: 0
   m_Name: Light 2D (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &875453013
 Transform:
@@ -29087,6 +29247,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &875453015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875453012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &886657169
 GameObject:
   m_ObjectHideFlags: 0
@@ -29097,12 +29277,13 @@ GameObject:
   m_Component:
   - component: {fileID: 886657170}
   - component: {fileID: 886657171}
+  - component: {fileID: 886657172}
   m_Layer: 0
   m_Name: Light 2D (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &886657170
 Transform:
@@ -29198,6 +29379,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &886657172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886657169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &895130807
 GameObject:
   m_ObjectHideFlags: 0
@@ -29299,12 +29500,13 @@ GameObject:
   m_Component:
   - component: {fileID: 907675111}
   - component: {fileID: 907675112}
+  - component: {fileID: 907675113}
   m_Layer: 0
   m_Name: Light 2D (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &907675111
 Transform:
@@ -29400,6 +29602,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &907675113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907675110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &909603316
 GameObject:
   m_ObjectHideFlags: 0
@@ -29410,12 +29632,13 @@ GameObject:
   m_Component:
   - component: {fileID: 909603317}
   - component: {fileID: 909603318}
+  - component: {fileID: 909603319}
   m_Layer: 0
   m_Name: Light 2D (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &909603317
 Transform:
@@ -29511,6 +29734,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &909603319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909603316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &926778313
 GameObject:
   m_ObjectHideFlags: 0
@@ -29521,12 +29764,13 @@ GameObject:
   m_Component:
   - component: {fileID: 926778314}
   - component: {fileID: 926778315}
+  - component: {fileID: 926778316}
   m_Layer: 0
   m_Name: Light 2D (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &926778314
 Transform:
@@ -29622,6 +29866,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &926778316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926778313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &927159618
 GameObject:
   m_ObjectHideFlags: 0
@@ -29676,12 +29940,13 @@ GameObject:
   m_Component:
   - component: {fileID: 937079519}
   - component: {fileID: 937079520}
+  - component: {fileID: 937079521}
   m_Layer: 0
   m_Name: Light 2D (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &937079519
 Transform:
@@ -29777,6 +30042,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &937079521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937079518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &958263308
 GameObject:
   m_ObjectHideFlags: 0
@@ -29787,12 +30072,13 @@ GameObject:
   m_Component:
   - component: {fileID: 958263309}
   - component: {fileID: 958263310}
+  - component: {fileID: 958263311}
   m_Layer: 0
   m_Name: Light 2D (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &958263309
 Transform:
@@ -29888,6 +30174,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &958263311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958263308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &1018147702
 GameObject:
   m_ObjectHideFlags: 0
@@ -30198,12 +30504,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1249764229}
   - component: {fileID: 1249764230}
+  - component: {fileID: 1249764231}
   m_Layer: 0
   m_Name: Light 2D (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1249764229
 Transform:
@@ -30299,6 +30606,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1249764231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249764228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 24
+  offDistance: 24.5
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &1250810264
 GameObject:
   m_ObjectHideFlags: 0
@@ -30309,12 +30636,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1250810265}
   - component: {fileID: 1250810266}
+  - component: {fileID: 1250810267}
   m_Layer: 0
   m_Name: Light 2D (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1250810265
 Transform:
@@ -30410,6 +30738,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1250810267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250810264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &1273853886
 GameObject:
   m_ObjectHideFlags: 0
@@ -30426,7 +30774,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1273853887
 Transform:
@@ -44658,12 +45006,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1310528545}
   - component: {fileID: 1310528546}
+  - component: {fileID: 1310528547}
   m_Layer: 0
   m_Name: Light 2D (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1310528545
 Transform:
@@ -44759,6 +45108,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1310528547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310528544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 24
+  offDistance: 24.5
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1001 &1328116469
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45073,12 +45442,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1363821966}
   - component: {fileID: 1363821967}
+  - component: {fileID: 1363821968}
   m_Layer: 0
   m_Name: Light 2D (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1363821966
 Transform:
@@ -45174,6 +45544,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1363821968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363821965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 24
+  offDistance: 24.5
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &1373912994
 GameObject:
   m_ObjectHideFlags: 0
@@ -45184,12 +45574,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1373912995}
   - component: {fileID: 1373912996}
+  - component: {fileID: 1373912997}
   m_Layer: 0
   m_Name: Light 2D (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1373912995
 Transform:
@@ -45285,6 +45676,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1373912997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373912994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &1402964431
 GameObject:
   m_ObjectHideFlags: 0
@@ -45428,12 +45839,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1450656964}
   - component: {fileID: 1450656965}
+  - component: {fileID: 1450656966}
   m_Layer: 0
   m_Name: Light 2D (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1450656964
 Transform:
@@ -45529,27 +45941,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
---- !u!4 &1452188724 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7680400720673995376, guid: 2f67bf455bb6b324e924d43dc68a4737, type: 3}
-  m_PrefabInstance: {fileID: 22077017}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1452188725 stripped
+--- !u!114 &1450656966
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1516027029823869069, guid: 2f67bf455bb6b324e924d43dc68a4737, type: 3}
-  m_PrefabInstance: {fileID: 22077017}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1450656963}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23d4a56f6c4f79945bc1e7be71aa478d, type: 3}
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!82 &1452188727 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 2408231818883092614, guid: 2f67bf455bb6b324e924d43dc68a4737, type: 3}
-  m_PrefabInstance: {fileID: 22077017}
-  m_PrefabAsset: {fileID: 0}
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &1477663945
 GameObject:
   m_ObjectHideFlags: 0
@@ -45560,12 +45971,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1477663946}
   - component: {fileID: 1477663947}
+  - component: {fileID: 1477663948}
   m_Layer: 0
   m_Name: Light 2D (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1477663946
 Transform:
@@ -45661,6 +46073,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1477663948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477663945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &1491696578
 GameObject:
   m_ObjectHideFlags: 0
@@ -45671,12 +46103,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1491696579}
   - component: {fileID: 1491696580}
+  - component: {fileID: 1491696581}
   m_Layer: 0
   m_Name: Light 2D (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1491696579
 Transform:
@@ -45772,6 +46205,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1491696581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491696578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &1495299325
 GameObject:
   m_ObjectHideFlags: 0
@@ -45782,12 +46235,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1495299326}
   - component: {fileID: 1495299327}
+  - component: {fileID: 1495299328}
   m_Layer: 0
   m_Name: Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1495299326
 Transform:
@@ -45883,6 +46337,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1495299328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495299325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &1504287840
 GameObject:
   m_ObjectHideFlags: 0
@@ -45893,12 +46367,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1504287841}
   - component: {fileID: 1504287842}
+  - component: {fileID: 1504287843}
   m_Layer: 0
   m_Name: Light 2D (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1504287841
 Transform:
@@ -45994,6 +46469,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1504287843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504287840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &1562665813
 GameObject:
   m_ObjectHideFlags: 0
@@ -46004,12 +46499,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1562665814}
   - component: {fileID: 1562665815}
+  - component: {fileID: 1562665816}
   m_Layer: 0
   m_Name: Light 2D (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1562665814
 Transform:
@@ -46105,6 +46601,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1562665816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562665813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &1586962897
 GameObject:
   m_ObjectHideFlags: 0
@@ -46119,7 +46635,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1586962898
 Transform:
@@ -46180,12 +46696,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1607396135}
   - component: {fileID: 1607396136}
+  - component: {fileID: 1607396137}
   m_Layer: 0
   m_Name: Light 2D (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1607396135
 Transform:
@@ -46281,6 +46798,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1607396137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607396134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &1636940217
 GameObject:
   m_ObjectHideFlags: 0
@@ -46291,12 +46828,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1636940218}
   - component: {fileID: 1636940219}
+  - component: {fileID: 1636940220}
   m_Layer: 0
   m_Name: Light 2D (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1636940218
 Transform:
@@ -46392,6 +46930,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1636940220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636940217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &1687830753
 GameObject:
   m_ObjectHideFlags: 0
@@ -46406,7 +46964,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1687830754
 Transform:
@@ -46440,12 +46998,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1716311745}
   - component: {fileID: 1716311746}
+  - component: {fileID: 1716311747}
   m_Layer: 0
   m_Name: Light 2D (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1716311745
 Transform:
@@ -46541,6 +47100,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1716311747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716311744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &1761071632
 GameObject:
   m_ObjectHideFlags: 0
@@ -46551,12 +47130,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1761071633}
   - component: {fileID: 1761071634}
+  - component: {fileID: 1761071635}
   m_Layer: 0
   m_Name: Light 2D (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1761071633
 Transform:
@@ -46652,6 +47232,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1761071635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761071632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &1772249784
 GameObject:
   m_ObjectHideFlags: 0
@@ -46662,12 +47262,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1772249785}
   - component: {fileID: 1772249786}
+  - component: {fileID: 1772249787}
   m_Layer: 0
   m_Name: Light 2D (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1772249785
 Transform:
@@ -46763,6 +47364,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1772249787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772249784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 24
+  offDistance: 24.5
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &1813969332
 GameObject:
   m_ObjectHideFlags: 0
@@ -46773,12 +47394,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1813969333}
   - component: {fileID: 1813969334}
+  - component: {fileID: 1813969335}
   m_Layer: 0
   m_Name: Light 2D (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1813969333
 Transform:
@@ -46874,6 +47496,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1813969335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813969332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &1845919228
 GameObject:
   m_ObjectHideFlags: 0
@@ -47005,7 +47647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1481fb7488e75f946ba71a0a1fda3d2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1452188724}
+  target: {fileID: 83677458}
 --- !u!1 &1906256450
 GameObject:
   m_ObjectHideFlags: 0
@@ -47264,12 +47906,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1977696128}
   - component: {fileID: 1977696129}
+  - component: {fileID: 1977696130}
   m_Layer: 0
   m_Name: Light 2D (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1977696128
 Transform:
@@ -47365,6 +48008,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1977696130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977696127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 24
+  offDistance: 24.5
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &1980848965
 GameObject:
   m_ObjectHideFlags: 0
@@ -47508,12 +48171,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1981399459}
   - component: {fileID: 1981399460}
+  - component: {fileID: 1981399461}
   m_Layer: 0
   m_Name: Light 2D (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1981399459
 Transform:
@@ -47609,6 +48273,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1981399461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981399458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &2014155319
 GameObject:
   m_ObjectHideFlags: 0
@@ -47619,12 +48303,13 @@ GameObject:
   m_Component:
   - component: {fileID: 2014155320}
   - component: {fileID: 2014155321}
+  - component: {fileID: 2014155322}
   m_Layer: 0
   m_Name: Light 2D (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2014155320
 Transform:
@@ -47720,6 +48405,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &2014155322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014155319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &2025248842
 GameObject:
   m_ObjectHideFlags: 0
@@ -47730,12 +48435,13 @@ GameObject:
   m_Component:
   - component: {fileID: 2025248843}
   - component: {fileID: 2025248844}
+  - component: {fileID: 2025248845}
   m_Layer: 0
   m_Name: Light 2D (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2025248843
 Transform:
@@ -47831,6 +48537,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &2025248845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025248842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 24
+  offDistance: 24.5
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &2042703984
 GameObject:
   m_ObjectHideFlags: 0
@@ -47841,12 +48567,13 @@ GameObject:
   m_Component:
   - component: {fileID: 2042703985}
   - component: {fileID: 2042703986}
+  - component: {fileID: 2042703987}
   m_Layer: 0
   m_Name: Light 2D (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2042703985
 Transform:
@@ -47942,6 +48669,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &2042703987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2042703984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &2048695692
 GameObject:
   m_ObjectHideFlags: 0
@@ -47952,12 +48699,13 @@ GameObject:
   m_Component:
   - component: {fileID: 2048695693}
   - component: {fileID: 2048695694}
+  - component: {fileID: 2048695695}
   m_Layer: 0
   m_Name: Light 2D (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2048695693
 Transform:
@@ -48053,6 +48801,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &2048695695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048695692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 23
+  offDistance: 24
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &2067403270
 GameObject:
   m_ObjectHideFlags: 0
@@ -48139,12 +48907,13 @@ GameObject:
   m_Component:
   - component: {fileID: 2069073149}
   - component: {fileID: 2069073150}
+  - component: {fileID: 2069073151}
   m_Layer: 0
   m_Name: Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2069073149
 Transform:
@@ -48240,6 +49009,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &2069073151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069073148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4b7c558c94d234f83e4c9ab054071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  useCameraAsTarget: 1
+  playerTag: Player
+  onDistance: 24
+  offDistance: 24.5
+  mode: 0
+  refreshInterval: 0.15
+  allowGlobal: 0
 --- !u!1 &2075704121
 GameObject:
   m_ObjectHideFlags: 0
