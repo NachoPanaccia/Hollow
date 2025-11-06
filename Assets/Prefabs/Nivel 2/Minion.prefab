@@ -27,6 +27,14 @@ PrefabInstance:
       propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2177517527806893501, guid: 366194f4916a63f40827e671523acc06, type: 3}
+      propertyPath: enemyData
+      value: 
+      objectReference: {fileID: 11400000, guid: 6c3671e7787fcdc4fbc2cb38aeb5eedd, type: 2}
+    - target: {fileID: 5996392948325794710, guid: 366194f4916a63f40827e671523acc06, type: 3}
+      propertyPath: enemyData
+      value: 
+      objectReference: {fileID: 11400000, guid: 6c3671e7787fcdc4fbc2cb38aeb5eedd, type: 2}
     - target: {fileID: 6180849273828508316, guid: 366194f4916a63f40827e671523acc06, type: 3}
       propertyPath: m_RootOrder
       value: 0

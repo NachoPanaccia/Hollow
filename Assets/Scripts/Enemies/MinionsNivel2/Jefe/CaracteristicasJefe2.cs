@@ -1,31 +1,32 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CaracteristicasJefe2 : MonoBehaviour, IDamageable
 {
     [SerializeField] private ScriptableEnemies enemyData;
-    //private int jefe2Lifes = 25;
     public int currentHealth;
+
+    private PooledObject pooled;
+
+    void Awake()
+    {
+        pooled = GetComponent<PooledObject>();
+    }
 
     void Start()
     {
-        currentHealth = enemyData.maxHealth;
+        currentHealth = (enemyData != null) ? enemyData.maxHealth : 25;
     }
 
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        Debug.Log($"Enemigo recibió {damage} de daño. Vida actual: {currentHealth}");
-
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
+        if (currentHealth <= 0) Die();
     }
 
     void Die()
     {
-        Destroy(gameObject);
+        if (pooled != null) pooled.Release();
+        else Destroy(gameObject);
     }
 }
+

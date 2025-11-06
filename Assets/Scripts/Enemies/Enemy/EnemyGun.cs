@@ -1,51 +1,55 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyGun : MonoBehaviour
 {
-    private float fireRate = 0.5f;
-    public GameObject bulletPrefab;
-    public Transform firePoint;
-    private string targetTag = "Player";
-    private float nextFireTime = 4f;
-    public AudioClip disparoEnemigoSound;
-    public AudioSource audioSource;
+    [SerializeField] private ScriptableEnemies data;
+    [SerializeField] private Transform firePoint;
+    [SerializeField] private AudioSource audioSource;
 
-    void Start()
+    private Transform target;             
+    private float nextShootTime;
+
+    private void Awake()
     {
-        audioSource = GetComponentInChildren<AudioSource>();
+        if (audioSource == null) audioSource = GetComponentInChildren<AudioSource>();
     }
 
-    void Update()
+    private void Start()
     {
-        ShootToPlayer();
+        var player = GameObject.FindGameObjectWithTag("Player"); 
+        if (player != null) target = player.transform;
+
+        nextShootTime = Time.time + 0.25f; 
     }
 
-    void ShootToPlayer()
+    private void Update()
     {
-        if (Time.time >= nextFireTime)
+        if (target == null || data == null || firePoint == null) return;
+
+        if (Time.time >= nextShootTime)
         {
-            GameObject target = GameObject.FindGameObjectWithTag(targetTag);
+            
+            Vector2 dir = (target.position - firePoint.position);
+            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            firePoint.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
-            if (target != null)
+           
+            var prefab = data.bulletPrefab;
+            if (prefab == null) return;
+
+            var go = PoolManager.Spawn(prefab, firePoint.position, firePoint.rotation);
+            var rb = go.GetComponent<Rigidbody2D>();
+            if (rb != null)
             {
-                Vector2 direction = target.transform.position - firePoint.position;
-                direction.Normalize();
-                float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-                Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-
-                Vector2 bulletDirection = firePoint.up;
-
-                Instantiate(bulletPrefab, firePoint.position, rotation).GetComponent<Rigidbody2D>().velocity = bulletDirection * 20f;
-
-                nextFireTime = Time.time + Random.Range(fireRate * 0.5f, fireRate * 1.5f);
-
-                if (disparoEnemigoSound != null && audioSource != null)
-                {
-                    audioSource.PlayOneShot(disparoEnemigoSound);
-                }
+                rb.velocity = (Vector2)firePoint.right * data.bulletSpeed; 
             }
+
+            if (data.shootSfx != null && audioSource != null)
+                audioSource.PlayOneShot(data.shootSfx);
+
+            nextShootTime = Time.time + (1f / Mathf.Max(0.01f, data.fireRate));
+
+            
         }
     }
 }

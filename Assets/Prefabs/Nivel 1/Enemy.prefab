@@ -167,10 +167,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7849160b1206ce4b92398a76884e70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyData: {fileID: 11400000, guid: 63bde48a7ef83fd4fa29cb6a76a43778, type: 2}
+  data: {fileID: 11400000, guid: c58fc74067c96744580bca1196adb3da, type: 2}
   currentHealth: 0
-  enemyPrefab: {fileID: 7772179540490431509}
-  IDamageable: {fileID: 0}
 --- !u!114 &5798777389218059812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,9 +181,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 057678ec78efe3c42b0ab9764ba2feee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 8213495911902478641, guid: 8eb978731fb1cca40be685973fce6f53, type: 3}
+  data: {fileID: 11400000, guid: c58fc74067c96744580bca1196adb3da, type: 2}
   firePoint: {fileID: 638895803383770768}
-  disparoEnemigoSound: {fileID: 8300000, guid: 39b2ced3b721ceb4297f89e8ebb894a5, type: 3}
   audioSource: {fileID: -4406338918767874304}
 --- !u!114 &7675647917578893784
 MonoBehaviour:
@@ -199,7 +196,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b4419b261e019b4781029b6d2ce545f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyData: {fileID: 11400000, guid: 63bde48a7ef83fd4fa29cb6a76a43778, type: 2}
+  data: {fileID: 11400000, guid: c58fc74067c96744580bca1196adb3da, type: 2}
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 0
+  avoidanceTick: 0.15
 --- !u!60 &191471833558749714
 PolygonCollider2D:
   m_ObjectHideFlags: 0
