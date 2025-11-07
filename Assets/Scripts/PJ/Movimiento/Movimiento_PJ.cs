@@ -10,7 +10,6 @@ public class Movimiento_PJ : MonoBehaviour
 
     private int animationState = 0;
 
-    // ===== Memento =====
     public class Memento
     {
         public Vector3 Position { get; private set; }
@@ -22,6 +21,7 @@ public class Movimiento_PJ : MonoBehaviour
             PlayerState = playerState;
         }
     }
+
     public class Caretaker
     {
         private List<Memento> mementoList = new List<Memento>();
@@ -29,6 +29,7 @@ public class Movimiento_PJ : MonoBehaviour
         public Memento Load(int index) => (index < mementoList.Count) ? mementoList[index] : null;
         public int GetSaveCount() => mementoList.Count;
     }
+
     private Caretaker caretaker;
 
     void Start()
@@ -92,7 +93,6 @@ public class Movimiento_PJ : MonoBehaviour
         mover.LookAtPoint(Camera.main ? (Vector3)Camera.main.ScreenToWorldPoint(Input.mousePosition) : transform.position);
     }
 
-    // ===== Memento =====
     public void SaveState()
     {
         var memento = new Memento(transform.position, currentState);

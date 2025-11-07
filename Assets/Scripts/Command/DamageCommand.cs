@@ -17,7 +17,6 @@ public class DamageCommand : ICommand
     {
         if (target != null)
         {
-            Debug.Log($"Ejecutando DamageCommand. Daño: {damage}");
             target.TakeDamage(damage);
         }
         else
