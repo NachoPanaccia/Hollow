@@ -29,7 +29,8 @@ public class GameManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-
+        SetInputLocked(false);
+        Time.timeScale = 1f;
     }
 
     private void Update()

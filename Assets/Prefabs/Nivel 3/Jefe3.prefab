@@ -138,7 +138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyData: {fileID: 11400000, guid: 3af65f953fcc26c488b19e1c0409a125, type: 2}
-  currentHealth: 0
+  currentHealth: 45
 --- !u!82 &6028740784642904228
 AudioSource:
   m_ObjectHideFlags: 0

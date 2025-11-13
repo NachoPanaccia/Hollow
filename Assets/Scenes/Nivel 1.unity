@@ -40353,7 +40353,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1449955609951746294, guid: 899763ea7336fc54997e1a85b965a725, type: 3}
       propertyPath: bulletSfxVolume
-      value: 0.572
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1449955609951746294, guid: 899763ea7336fc54997e1a85b965a725, type: 3}
       propertyPath: usarRightComoForward

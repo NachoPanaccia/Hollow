@@ -12,5 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff0d61a16d621af4480f247701103602, type: 3}
   m_Name: Jefe3
   m_EditorClassIdentifier: 
-  maxHealth: 45
+  maxHealth: 60
   speed: 0
+  damage: 1
+  fireRate: 0.5
+  bulletSpeed: 20
+  detectRange: 12
+  attackRange: 8
+  avoidanceRadius: 3
+  avoidanceWeight: 1
+  bulletPrefab: {fileID: 0}
+  shootSfx: {fileID: 0}

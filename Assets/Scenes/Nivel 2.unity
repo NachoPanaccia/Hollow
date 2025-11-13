@@ -44961,6 +44961,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1449955609951746294, guid: 899763ea7336fc54997e1a85b965a725, type: 3}
+      propertyPath: bulletSfx
+      value: 
+      objectReference: {fileID: 8300000, guid: d72520358b52adf49a28a01dfe457962, type: 3}
+    - target: {fileID: 1449955609951746294, guid: 899763ea7336fc54997e1a85b965a725, type: 3}
+      propertyPath: firePoint
+      value: 
+      objectReference: {fileID: 1400489596}
+    - target: {fileID: 1449955609951746294, guid: 899763ea7336fc54997e1a85b965a725, type: 3}
+      propertyPath: bulletSfxVolume
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1449955609951746294, guid: 899763ea7336fc54997e1a85b965a725, type: 3}
+      propertyPath: usarRightComoForward
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2218845234186526446, guid: 899763ea7336fc54997e1a85b965a725, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -45027,6 +45043,11 @@ PrefabInstance:
       objectReference: {fileID: 1348055279}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 899763ea7336fc54997e1a85b965a725, type: 3}
+--- !u!4 &1400489596 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1207828236992451890, guid: 899763ea7336fc54997e1a85b965a725, type: 3}
+  m_PrefabInstance: {fileID: 1400489595}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1487045538
 GameObject:
   m_ObjectHideFlags: 0
