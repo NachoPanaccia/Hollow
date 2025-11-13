@@ -22,6 +22,11 @@ public class LevelManager3 : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        GameManager.SetInputLocked(false);
+    }
+
     public void BossDefeated()
     {
         isBossAlive = false;

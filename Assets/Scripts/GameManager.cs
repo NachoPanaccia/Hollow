@@ -6,7 +6,10 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    private bool m_isPaused = false; 
+    public static bool CanTogglePause = true;
+    private bool m_isPaused = false;
+    public static bool InputLocked { get; private set; } = false;
+    public static void SetInputLocked(bool v) => InputLocked = v;
 
     private void Awake()
     {
@@ -31,7 +34,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.Escape) && CanTogglePause)
         {
             if (!m_isPaused)
             {
@@ -41,6 +44,7 @@ public class GameManager : MonoBehaviour
             {
                 ResumeGame();
             }
+            
         }
     }
 

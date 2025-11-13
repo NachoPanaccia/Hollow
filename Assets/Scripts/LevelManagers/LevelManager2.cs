@@ -24,6 +24,11 @@ public class LevelManager2 : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        GameManager.SetInputLocked(false);
+    }
+
     public void RegisterMinion()
     {
         totalMinions++;

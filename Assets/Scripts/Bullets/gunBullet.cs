@@ -22,7 +22,6 @@ public class gunBullet : MonoBehaviour
     {
         m_direction = p_direction.normalized;
 
-        
         float angle = Mathf.Atan2(m_direction.y, m_direction.x) * Mathf.Rad2Deg - 90f;
         transform.rotation = Quaternion.Euler(0, 0, angle);
     }
