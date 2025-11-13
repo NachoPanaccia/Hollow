@@ -5,18 +5,13 @@ using UnityEngine.Rendering.Universal;
 public class ProximityLight2D : MonoBehaviour
 {
     public enum Mode { EnableDisable, DimIntensity }
+    private float onDistance = 30f;
+    private float offDistance = 30f;
 
     [Header("Target")]
-   
     public Transform target;
     public bool useCameraAsTarget = false;
     public string playerTag = "Player";
-
-    [Header("Distancias (m)")]
-   
-    public float onDistance = 14f;
-    
-    public float offDistance = 18f;
 
     [Header("Modo")]
     public Mode mode = Mode.EnableDisable;
