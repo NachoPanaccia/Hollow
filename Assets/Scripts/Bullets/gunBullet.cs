@@ -8,55 +8,63 @@ public class gunBullet : MonoBehaviour
     [SerializeField] private float lifeTime = 3f;
 
     private float lifeTimer;
-    private Vector3 m_direction;
+    private Vector3 m_direction = Vector3.right;
 
     public int damage = 5;
     public Pool bulletPool;
 
-    void OnEnable()
+    private void OnEnable()
     {
+        
         lifeTimer = lifeTime;
+        
+        m_direction = transform.right;
     }
 
-    public void SetDirection(Vector3 p_direction)
+    
+    public void SetDirection(Vector3 direction)
     {
-        m_direction = p_direction.normalized;
-
-        float angle = Mathf.Atan2(m_direction.y, m_direction.x) * Mathf.Rad2Deg - 90f;
-        transform.rotation = Quaternion.Euler(0, 0, angle);
+        if (direction.sqrMagnitude > 0.0001f)
+            m_direction = direction.normalized;
+        else
+            m_direction = transform.right;
     }
 
-    void Update()
+    private void Update()
     {
-        transform.position += bulletSpeed * Time.deltaTime * m_direction;
+        
+        transform.position += m_direction * bulletSpeed * Time.deltaTime;
 
+       
         lifeTimer -= Time.deltaTime;
         if (lifeTimer <= 0f)
         {
-            if (bulletPool != null) bulletPool.ReturnToPool(gameObject);
-            else Destroy(gameObject);
+            if (bulletPool != null)
+                bulletPool.ReturnToPool(gameObject);
+            else
+                Destroy(gameObject);
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+       
         if (collision.gameObject.TryGetComponent<IDamageable>(out var target))
         {
             ICommand damageCommand = new DamageCommand(target, damage);
             damageCommand.Execute();
         }
 
+        
         if (collision.gameObject.CompareTag("Pared"))
         {
             Debug.Log("Choqué con la pared");
-
-            if (bulletPool != null) bulletPool.ReturnToPool(gameObject);
-            else Destroy(gameObject);
-
-            return; // por las dudas, para no seguir haciendo nada
         }
 
-        if (bulletPool != null) bulletPool.ReturnToPool(gameObject);
-        else Destroy(gameObject);
+       
+        if (bulletPool != null)
+            bulletPool.ReturnToPool(gameObject);
+        else
+            Destroy(gameObject);
     }
 }

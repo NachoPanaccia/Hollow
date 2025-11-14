@@ -1,10 +1,11 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 public class ArmasPJ : MonoBehaviour
 {
     [Header("Referencias")]
     [SerializeField] private Transform firePoint;
     [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private Pool bulletPool;
 
     [Header("Disparo")]
     [SerializeField] private bool semiAuto = true;
@@ -15,7 +16,7 @@ public class ArmasPJ : MonoBehaviour
     [SerializeField] private AudioClip bulletSfx;
     [Range(0f, 1f)][SerializeField] private float bulletSfxVolume = 0.9f;
 
-    [Header("Dirección")] // NO SE ESTA USANDO.
+    [Header("DirecciÃ³n")] // NO SE ESTA USANDO.
     [SerializeField] private bool usarRightComoForward = true;
 
     private float _nextFireAtUnscaled = 0f;
@@ -45,9 +46,21 @@ public class ArmasPJ : MonoBehaviour
     {
         if (!firePoint || !bulletPrefab) return;
 
-        GameObject bala = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        GameObject bala;
 
-        // Forzar que NO aplique físicas
+        // 1) Sacar la bala del pool si existe
+        if (bulletPool != null)
+        {
+            bala = bulletPool.GetObject();
+            bala.transform.SetPositionAndRotation(firePoint.position, firePoint.rotation);
+        }
+        else
+        {
+            // Fallback: si no hay pool asignado, seguimos como antes
+            bala = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        }
+
+        // 2) Forzar que NO aplique fÃ­sicas
         Rigidbody2D rb = bala.GetComponent<Rigidbody2D>();
         if (rb)
         {
@@ -58,21 +71,22 @@ public class ArmasPJ : MonoBehaviour
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
 
-        // Pasar dirección a la bala (sin agregar métodos nuevos)
+        // 3) Pasar direcciÃ³n y pool a la bala
         var gb = bala.GetComponent<gunBullet>();
         if (gb != null)
         {
+            gb.bulletPool = bulletPool;  // â† MUY IMPORTANTE
             Vector3 dir = usarRightComoForward ? (Vector3)firePoint.right : (Vector3)firePoint.up;
             gb.SetDirection(dir);
         }
 
-        // Fallback de vida si por alguna razón no hay gunBullet en el prefab
+        // 4) Fallback de vida solo si NO es gunBullet
         if (gb == null && bulletLifetime > 0f)
         {
             Destroy(bala, bulletLifetime);
         }
 
-        // SFX de disparo
+        // 5) SFX de disparo (igual que antes)
         if (bulletSfx && audioSource)
         {
             audioSource.PlayOneShot(bulletSfx, bulletSfxVolume);
