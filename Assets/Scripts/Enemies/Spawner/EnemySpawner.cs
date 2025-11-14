@@ -36,9 +36,9 @@ public class EnemySpawner : MonoBehaviour
     private void TrySpawn()
     {
         if (enemyPrefab == null) return;
+        if (enemyPrefab == null) Debug.Log("aca el error");
 
-       
-        var current = GameObject.FindGameObjectsWithTag("Enemy").Length;
+            var current = GameObject.FindGameObjectsWithTag("Enemy").Length;
         if (current >= maxAlive) return;
 
         if (player != null)

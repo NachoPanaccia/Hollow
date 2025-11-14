@@ -46,6 +46,16 @@ public class gunBullet : MonoBehaviour
             damageCommand.Execute();
         }
 
+        if (collision.gameObject.CompareTag("Pared"))
+        {
+            Debug.Log("Choqué con la pared");
+
+            if (bulletPool != null) bulletPool.ReturnToPool(gameObject);
+            else Destroy(gameObject);
+
+            return; // por las dudas, para no seguir haciendo nada
+        }
+
         if (bulletPool != null) bulletPool.ReturnToPool(gameObject);
         else Destroy(gameObject);
     }

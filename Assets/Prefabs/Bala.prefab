@@ -106,7 +106,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!61 &6551640567576196556
 BoxCollider2D:
@@ -125,7 +125,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.68, y: 3.31}
+    oldSize: {x: 2.689375, y: 3.31}
     newSize: {x: 5.12, y: 5.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -146,4 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90bc86b3db8bbd94a96a4c32bd4c4fb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletSpeed: 30
+  lifeTime: 3
   damage: 2
+  bulletPool: {fileID: 0}

@@ -20,7 +20,7 @@ public class PauseMenuController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (isPaused)
                 ResumeGame();
@@ -48,6 +48,7 @@ public class PauseMenuController : MonoBehaviour
     public void RestartLevel()
     {
         Time.timeScale = 1f;
+        PoolManager.ClearAll();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
@@ -76,6 +77,6 @@ public class PauseMenuController : MonoBehaviour
 
     public void QuitGame()
     {
-        Application.Quit();
+        SceneManager.LoadScene("Inicio");
     }
 }

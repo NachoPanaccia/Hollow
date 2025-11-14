@@ -14,6 +14,7 @@ public class IrAJugarButton : MonoBehaviour
 
     public void IrAJugar()
     {
+        PoolManager.ClearAll();
         SceneManager.LoadScene(2);
     }
 }

@@ -408,8 +408,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -668,8 +666,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -805,8 +801,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -937,8 +931,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -1454,8 +1446,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.48
-  offDistance: 22.51
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -1586,8 +1576,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -1718,8 +1706,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -1850,8 +1836,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -1982,8 +1966,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -2114,8 +2096,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -2246,8 +2226,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -2511,8 +2489,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -2643,8 +2619,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -2968,8 +2942,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -3100,8 +3072,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -3232,8 +3202,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -3364,8 +3332,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -3572,8 +3538,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -3704,8 +3668,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -4102,8 +4064,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -15540,6 +15500,46 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 57, y: -5, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 58, y: -5, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 59, y: -5, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 60, y: -5, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: 61, y: -5, z: 0}
     second:
       serializedVersion: 2
@@ -16645,6 +16645,46 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 1
       m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 57, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 58, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 59, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 60, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -42472,17 +42512,17 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 3781
+  - m_RefCount: 3789
     m_Data: {fileID: 11400000, guid: 3ccd15b9586706d478f2f7d42e21dc1d, type: 2}
   - m_RefCount: 46
     m_Data: {fileID: 11400000, guid: d30183cd6f1b8bd43ae422cd04d4a808, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 3781
+  - m_RefCount: 3789
     m_Data: {fileID: 21300000, guid: 1acdc5c22983bc24aa094b3a65fc2029, type: 3}
   - m_RefCount: 46
     m_Data: {fileID: 21300000, guid: 27796567ed2b31149a224529a310eac3, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 3827
+  - m_RefCount: 3835
     m_Data:
       e00: 1
       e01: 0
@@ -42501,7 +42541,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 3827
+  - m_RefCount: 3835
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -42724,8 +42764,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -42856,8 +42894,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -42988,8 +43024,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -43120,8 +43154,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -43637,8 +43669,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.48
-  offDistance: 22.51
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -43814,8 +43844,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -43946,8 +43974,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -44078,8 +44104,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -44390,8 +44414,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -44522,8 +44544,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -44725,8 +44745,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -45175,8 +45193,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -45307,8 +45323,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -45439,8 +45453,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -45836,8 +45848,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -46155,8 +46165,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -46287,8 +46295,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -46419,8 +46425,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -46759,8 +46763,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -47159,8 +47161,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -47291,8 +47291,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -47423,8 +47421,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -47555,8 +47551,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -47687,8 +47681,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -47819,8 +47811,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -47951,8 +47941,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0
@@ -48183,8 +48171,8 @@ Tilemap:
   - first: {x: 57, y: -5, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -48193,8 +48181,8 @@ Tilemap:
   - first: {x: 58, y: -5, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -48203,8 +48191,8 @@ Tilemap:
   - first: {x: 59, y: -5, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -48213,8 +48201,8 @@ Tilemap:
   - first: {x: 60, y: -5, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -48243,8 +48231,8 @@ Tilemap:
   - first: {x: 57, y: -4, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 4
-      m_TileSpriteIndex: 4
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -48253,8 +48241,8 @@ Tilemap:
   - first: {x: 58, y: -4, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 4
-      m_TileSpriteIndex: 4
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -48263,8 +48251,8 @@ Tilemap:
   - first: {x: 59, y: -4, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 4
-      m_TileSpriteIndex: 4
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -48273,8 +48261,8 @@ Tilemap:
   - first: {x: 60, y: -4, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 4
-      m_TileSpriteIndex: 4
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -62456,23 +62444,23 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: b80a6086d5b9fe5419cc58b016625db8, type: 2}
   - m_RefCount: 5
     m_Data: {fileID: 11400000, guid: 98a18e0c0f0bc0f4bae39ad6f22ceda1, type: 2}
+  - m_RefCount: 8
+    m_Data: {fileID: 11400000, guid: 3ccd15b9586706d478f2f7d42e21dc1d, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 4
-    m_Data: {fileID: 11400000, guid: 05700449501bbb344ab38f6333f0abb6, type: 2}
-  - m_RefCount: 4
-    m_Data: {fileID: 11400000, guid: 2f96f3b434c19424e9109c3de1a0f9ec, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileSpriteArray:
   - m_RefCount: 1416
     m_Data: {fileID: 21300000, guid: 85c1089acc564944792f2f58a7e410bc, type: 3}
   - m_RefCount: 5
     m_Data: {fileID: 21300000, guid: 01465b7150ba89940aa6d1a24b254cee, type: 3}
+  - m_RefCount: 8
+    m_Data: {fileID: 21300000, guid: 1acdc5c22983bc24aa094b3a65fc2029, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 4
-    m_Data: {fileID: 21300000, guid: efa01c4386a2ac44abedb76a7c0bed30, type: 3}
-  - m_RefCount: 4
-    m_Data: {fileID: 21300000, guid: 9955ec1fc4bb94347ac0e40b60eb3ab0, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileMatrixArray:
   - m_RefCount: 1429
     m_Data:
@@ -62646,8 +62634,6 @@ MonoBehaviour:
   target: {fileID: 0}
   useCameraAsTarget: 1
   playerTag: Player
-  onDistance: 22.4
-  offDistance: 25.4
   mode: 0
   refreshInterval: 0.15
   allowGlobal: 0

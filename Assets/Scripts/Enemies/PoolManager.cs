@@ -24,12 +24,25 @@ public static class PoolManager
         if (!pools.ContainsKey(prefab))
             pools[prefab] = new Queue<PooledObject>();
 
-        PooledObject obj;
-        if (pools[prefab].Count > 0)
+        var pool = pools[prefab];
+
+        PooledObject obj = null;
+
+        // Buscar el primer objeto del pool que no esté destruido
+        while (pool.Count > 0 && obj == null)
         {
-            obj = pools[prefab].Dequeue();
+            obj = pool.Dequeue();
+
+            // Si Unity ya destruyó este objeto, va a comparar como null
+            if (obj == null)
+            {
+                // Lo descartamos y seguimos buscando
+                obj = null;
+            }
         }
-        else
+
+        // Si no encontramos ninguno “sano”, instanciamos uno nuevo
+        if (obj == null)
         {
             obj = CreateNew(prefab);
         }
@@ -37,9 +50,10 @@ public static class PoolManager
         var go = obj.gameObject;
         go.transform.SetParent(parent, false);
         go.transform.SetPositionAndRotation(position, rotation);
-        go.SetActive(true);  
+        go.SetActive(true);
         return go;
     }
+
 
     public static void Release(PooledObject obj)
     {
@@ -65,5 +79,21 @@ public static class PoolManager
         if (po == null) po = go.AddComponent<PooledObject>();
         po.SetOrigin(prefab);
         return po;
+    }
+    public static void ClearAll()
+    {
+        foreach (var kvp in pools)
+        {
+            var queue = kvp.Value;
+            while (queue.Count > 0)
+            {
+                var obj = queue.Dequeue();
+                if (obj != null)
+                {
+                    Object.Destroy(obj.gameObject);
+                }
+            }
+        }
+        pools.Clear();
     }
 }
