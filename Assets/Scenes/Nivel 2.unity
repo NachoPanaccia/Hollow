@@ -42591,7 +42591,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 628365451}
-  m_BodyType: 2
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -42602,8 +42602,8 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_CollisionDetection: 1
+  m_Constraints: 7
 --- !u!1 &637812844
 GameObject:
   m_ObjectHideFlags: 0
@@ -44989,7 +44989,7 @@ PrefabInstance:
       objectReference: {fileID: 1400489596}
     - target: {fileID: 1449955609951746294, guid: 899763ea7336fc54997e1a85b965a725, type: 3}
       propertyPath: bulletSfxVolume
-      value: 0.6
+      value: 0.508
       objectReference: {fileID: 0}
     - target: {fileID: 1449955609951746294, guid: 899763ea7336fc54997e1a85b965a725, type: 3}
       propertyPath: usarRightComoForward
