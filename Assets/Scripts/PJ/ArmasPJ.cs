@@ -10,7 +10,7 @@ public class ArmasPJ : MonoBehaviour
     [Header("Disparo")]
     [SerializeField] private bool semiAuto = true;
     [SerializeField] private float fireRate = 8f;
-    [SerializeField] private float bulletSpeed = 12f;
+    //[SerializeField] private float bulletSpeed = 12f;
     [SerializeField] private float bulletLifetime = 5f;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip bulletSfx;

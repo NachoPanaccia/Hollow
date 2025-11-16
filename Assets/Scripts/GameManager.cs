@@ -1,12 +1,11 @@
 using System.Collections;
+using UnityEngine.Events;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-
-    public static bool CanTogglePause = true;
     private bool m_isPaused = false;
     public static bool InputLocked { get; private set; } = false;
     public static void SetInputLocked(bool v) => InputLocked = v;
@@ -24,6 +23,8 @@ public class GameManager : MonoBehaviour
             return;
         }
 
+        PauseMenuController.OnPause += HandlePause;
+        PauseMenuController.OnResume += HandleResume;
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
@@ -31,34 +32,6 @@ public class GameManager : MonoBehaviour
     {
         SetInputLocked(false);
         Time.timeScale = 1f;
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape) && CanTogglePause)
-        {
-            if (!m_isPaused)
-            {
-                PauseGame();
-            }
-            else
-            {
-                ResumeGame();
-            }
-            
-        }
-    }
-
-    private void PauseGame()
-    {
-        Time.timeScale = 0f;
-        m_isPaused = true;
-    }
-
-    private void ResumeGame()
-    {
-        Time.timeScale = 1f;
-        m_isPaused = false;
     }
 
     public void PlayerDied()
@@ -75,5 +48,19 @@ public class GameManager : MonoBehaviour
     private void OnDestroy()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
+        PauseMenuController.OnPause -= HandlePause;
+        PauseMenuController.OnResume -= HandleResume;
+    }
+
+    private void HandlePause()
+    {
+        m_isPaused = true;
+        Time.timeScale = 0f;
+    }
+
+    private void HandleResume()
+    {
+        m_isPaused = false;
+        Time.timeScale = 1f;
     }
 }

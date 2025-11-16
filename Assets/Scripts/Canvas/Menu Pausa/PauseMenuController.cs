@@ -7,6 +7,9 @@ public class PauseMenuController : MonoBehaviour
     [SerializeField] private GameObject pauseMenuUI;
     [SerializeField] private GameObject optionsMenuUI;
     [SerializeField] private Slider volumeSlider;
+    
+    public static event System.Action OnPause;
+    public static event System.Action OnResume;
 
     private bool isPaused = false;
 
@@ -33,16 +36,18 @@ public class PauseMenuController : MonoBehaviour
     {
         pauseMenuUI.SetActive(true);
         optionsMenuUI.SetActive(false);
-        Time.timeScale = 0f;
+        //Time.timeScale = 0f;
         isPaused = true;
+        OnPause?.Invoke();
     }
 
     public void ResumeGame()
     {
         pauseMenuUI.SetActive(false);
         optionsMenuUI.SetActive(false);
-        Time.timeScale = 1f;
+        //Time.timeScale = 1f;
         isPaused = false;
+        OnResume?.Invoke();
     }
 
     public void RestartLevel()
