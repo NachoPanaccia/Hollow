@@ -23,12 +23,20 @@ public class PauseMenuController : MonoBehaviour
 
     void Update()
     {
+        if (GameManager.InputLocked)
+            return;
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (isPaused)
+            {
                 ResumeGame();
+
+            }
             else
+            {
                 PauseGame();
+            }
         }
     }
 
@@ -36,7 +44,6 @@ public class PauseMenuController : MonoBehaviour
     {
         pauseMenuUI.SetActive(true);
         optionsMenuUI.SetActive(false);
-        //Time.timeScale = 0f;
         isPaused = true;
         OnPause?.Invoke();
     }
@@ -45,7 +52,6 @@ public class PauseMenuController : MonoBehaviour
     {
         pauseMenuUI.SetActive(false);
         optionsMenuUI.SetActive(false);
-        //Time.timeScale = 1f;
         isPaused = false;
         OnResume?.Invoke();
     }
