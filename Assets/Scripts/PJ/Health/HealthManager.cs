@@ -9,6 +9,7 @@ public class HealthManager : MonoBehaviour
     public AudioClip deadSound;
     private Animator anim;
 
+    [SerializeField] private DamageFlash damageFlash;
     [SerializeField] private GameObject m_corazonPrefab;
     [SerializeField] private RectTransform m_corazonContainer;
     [SerializeField] private int maxLifesCorazones = 5;
@@ -48,6 +49,11 @@ public class HealthManager : MonoBehaviour
     {
         currentHealth -= damage;
         audioSource.PlayOneShot(damageSound);
+
+        if (damageFlash != null)
+        {
+            damageFlash.Flash();
+        }
 
         for (int i = m_intancedCorazones.Count - 1; i >= 0; i--)
         {
