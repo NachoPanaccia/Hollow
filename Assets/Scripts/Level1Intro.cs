@@ -163,11 +163,19 @@ public class Level1Intro : MonoBehaviour
         visible = false;
         if (continueText) continueText.gameObject.SetActive(false);
 
-        if (canvasGroup) yield return FadeCanvas(canvasGroup, canvasGroup.alpha, 0f, fadeOut);
+        if (canvasGroup)
+        {
+            canvasGroup.blocksRaycasts = false;
+            canvasGroup.interactable = false;
+
+            yield return FadeCanvas(canvasGroup, canvasGroup.alpha, 0f, fadeOut);
+        }
 
         Time.timeScale = 1f;
         GameManager.SetInputLocked(false);
         Destroy(gameObject);
+
+        yield break;
     }
 
     private IEnumerator FadeCanvas(CanvasGroup cg, float from, float to, float dur)

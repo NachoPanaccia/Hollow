@@ -55,12 +55,16 @@ public class GameManager : MonoBehaviour
     private void HandlePause()
     {
         m_isPaused = true;
+        SetInputLocked(true);
         Time.timeScale = 0f;
+        AudioListener.pause = true;
     }
 
     private void HandleResume()
     {
         m_isPaused = false;
+        SetInputLocked(false);
         Time.timeScale = 1f;
+        AudioListener.pause = false;
     }
 }
